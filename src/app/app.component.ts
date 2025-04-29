@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Store } from '@ngxs/store';
-import { StateClear } from 'ngxs-reset-plugin';
+import { StateResetAll } from 'ngxs-reset-plugin';
 import { AlbumsComponent } from './albums/albums.component';
 
 @Component({
@@ -25,6 +25,6 @@ export class AppComponent {
   clearStore()
    {
 
-    this.store.dispatch(new StateClear());
+    this.store.dispatch(new StateResetAll());
   }
 }

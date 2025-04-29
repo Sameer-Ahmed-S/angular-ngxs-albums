@@ -13,7 +13,6 @@ export class PhotosComponent {
   photos$: Observable<Photo[]>;
 
   constructor(private store: Store) {
-    debugger;
     this.photos$ = this.store.select(PhotosState.photos);
   }
 
