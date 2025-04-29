@@ -24,4 +24,8 @@ export class AlbumsComponent implements OnInit {
   selectAlbum(albumId: number): void {
     this.store.dispatch(new LoadPhotosByAlbum(albumId));
   }
+
+  reloadData(): void {
+    this.store.dispatch(new LoadAlbums());
+  }
 }

@@ -16,4 +16,7 @@ export class PhotosComponent {
     debugger;
     this.photos$ = this.store.select(PhotosState.photos);
   }
+
+
+  
 }

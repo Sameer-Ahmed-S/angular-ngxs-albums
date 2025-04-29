@@ -52,6 +52,9 @@ router-outlet {
 
 <div class="container">
   <h1>Albums and Photos (NGXS + Angular 17)</h1>
+
+  <button (click)="clearStore()">Reset Store</button>
+  <button (click)="loadData()">Load Data</button>
   <div class="content">
     <div class="albums">
       <app-albums></app-albums>
