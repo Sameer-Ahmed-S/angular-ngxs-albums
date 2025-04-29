@@ -1,0 +1,8 @@
+<h2>Albums</h2>
+<ul>
+  <li *ngFor="let album of albums$ | async">
+    <a href="#" (click)="selectAlbum(album.id); $event.preventDefault()">
+      {{ album.title }}
+    </a>
+  </li>
+</ul> 
